@@ -5,7 +5,7 @@ import { createRoot } from "react-dom/client";
 import { legacy_createStore as createStore, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 import { Provider } from "react-redux";
-import { reducer } from "./modules/github";
+import { reducer } from "./modules/stackoverflow";
 import { composeWithDevTools } from "redux-devtools-extension";
 
 import App from "./components/App";
