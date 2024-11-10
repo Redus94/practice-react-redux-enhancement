@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setSort, setPhrase, getPosts } from "./stackoverflow.actions";
 
 const StackOverFlow = () => {
-  const { sort, phrase, posts } = useSelector((state) => state);
+  const { sort, phrase, posts } = useSelector((state) => state.stackoverflow);
   const dispatch = useDispatch();
 
   useEffect(() => {
